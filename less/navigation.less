@@ -6,6 +6,9 @@ nav {
 	background-color: @wild-sand;
 	border: 1px solid @sea-shell;
 	color: @river-bend;
+	@media @phone {
+		width: 100%;
+	}
 	.main-title {
 		.center();
 		font-size: 4rem;
@@ -18,5 +21,8 @@ nav {
 		margin: 1rem;
 		padding: 0 35rem;
 		width: 100%;
+		@media @phone {
+			padding: 0;
+		}
 	}
 }
