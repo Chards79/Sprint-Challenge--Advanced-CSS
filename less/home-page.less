@@ -1,7 +1,10 @@
 // Home Content
 
 .home {
+	border: 1px solid @border-real;
+	color: @shuttle-gray;
 	.intro {
+		color: @ebony-clay;
 		h2 {
 			padding: 15px;
 		}
@@ -55,6 +58,11 @@
 			}
 
 			.btn {
+				.btn-style(#22283a, 0.8rem, 16px);
+			}
+			.btn:hover {
+				background-color: @shuttle-gray;
+				color: #22283a;
 			}
 		}
 
