@@ -1,75 +1,118 @@
 // Home Content
 
 .home {
+	border: 1px solid @border-real;
+	color: @shuttle-gray;
+	.intro {
+		color: @ebony-clay;
 
-  .intro {
+		.header-img {
+			@media @phone {
+				width: 100%;
+			}
+		}
+		h2 {
+			padding: 15px;
+		}
 
-    h2 {
-      padding: 15px;
-    }
+		p {
+			padding: 15px;
+		}
+	}
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+	.space-images {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+		.blast {
+			.img-style();
+			height: 100%;
+			@media @phone {
+				width: 100%;
+				margin: 1rem;
+			}
+		}
+		.sky {
+			.img-style();
+			height: 100%;
+			@media @phone {
+				display: none;
+			}
+		}
+		.launch {
+			.img-style();
+			height: 100%;
+			@media @phone {
+				display: none;
+			}
+		}
+	}
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
+	.visit-planets {
+		padding: 15px;
 
-  .visit-planets {
-    padding: 15px;
+		h3 {
+			margin-top: 11px;
+		}
 
-    h3 {
-      margin-top: 11px;
-    }
+		p {
+			margin-top: 13px;
+		}
+	}
 
-    p {
-      margin-top: 13px;
-    }
-  }
+	.walk {
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
+		@media @phone {
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 1rem 1rem;
+			margin-top: 0;
+		}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+		.walk-text {
+			width: 50%;
+			@media @phone {
+				width: 100%;
+			}
+			h3 {
+				margin-bottom: 10px;
+			}
 
-    .walk-text {
-      width: 50%;
+			p {
+				margin-bottom: 26px;
+			}
 
-      h3 {
-        margin-bottom: 10px;
-      }
+			.btn {
+				.btn-style(#22283a, 0.8rem, 16px);
+				@media @phone {
+					width: 100%;
+				}
+			}
+			.btn:hover {
+				background-color: @shuttle-gray;
+				color: #22283a;
+			}
+		}
 
-      p {
-        margin-bottom: 26px;
-      }
+		.walk-img {
+			width: 46%;
+			margin-left: 4%;
+			@media @phone {
+				width: 100%;
+				margin: 2rem;
+				margin-left: 0;
+			}
+		}
 
-      .btn {
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+		}
+	}
+} //home
